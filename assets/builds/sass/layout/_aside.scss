@@ -1,0 +1,33 @@
+aside {
+  float: right;
+  width: 34%;
+
+  .agendasList {
+
+    .title {
+      background: $green;
+      color: $white;
+      margin-bottom: 20px;
+
+      h2 {
+        text-align: center;
+        padding: 15px 0;
+      }// h2
+    }// title
+
+    .agenda {
+      @include clearfix;
+      padding: 10px 0;
+      border-bottom: 1px dotted $green;
+
+      img {
+        float: left;
+        width: 80px;
+      }// img
+
+      p {
+        padding-left: 100px;
+      }// p
+    }// agenda
+  }// agendasList
+}// aside

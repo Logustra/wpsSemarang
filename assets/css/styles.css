@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400|Raleway:100,300,400|Roboto:100,300,400");
+body {
+  width: 100%;
+  background: #f7f7f7;
+}
+
+h2 {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  width: 100%;
+}
+
+.button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.navbar-default {
+  border: 0;
+  margin-bottom: 0;
+}
+
+.navbar-default .container {
+  padding: 0 70px;
+}
+
+.navbar-default .container .navbar-header .navbar-brand {
+  padding: 10px 0 65px 30px;
+}
+
+.navbar-default .container .navbar-header .navbar-brand img {
+  max-width: 300px;
+}
+
+.navbar-default .container .navbar-collapse .navbarButton {
+  font-weight: bold;
+  border: 0;
+  margin: 20px 10px 10px 50px;
+}
+
+.navbar-default .container .navbar-collapse ul {
+  padding-top: 10px;
+}
+
+.navbar-default .container .colorLine:empty {
+  content: "";
+  background: url("../images/color-line.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+  height: 5px;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("../images/bg-hero.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 575px;
+}
+
+.hero .container {
+  padding: 0 80px;
+}
+
+.hero .container img {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+main {
+  margin: 0 auto;
+  background: #ffffff;
+  width: 80%;
+}
+
+main:before, main:after {
+  content: "";
+  display: table;
+}
+
+main:after {
+  clear: both;
+}
+
+.programmersList {
+  text-align: center;
+}
+
+.programmersList h2 {
+  padding-top: 40px;
+}
+
+.programmersList .programmers {
+  padding: 30px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.programmersList .programmers figure img {
+  max-width: 155px;
+}
+
+.programmersList .programmers figure figcaption {
+  padding: 10px 0;
+}
+
+.programmersList .programmers a {
+  padding-top: 25px;
+}
+
+.programmersList .programmers a img {
+  max-width: 180px;
+}
+
+.portfoliosList {
+  float: left;
+  width: 65%;
+}
+
+.portfoliosList .title {
+  background: #0088CC;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.portfoliosList .title h2 {
+  padding: 15px 0 15px 30px;
+}
+
+.portfoliosList .portfolios {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.portfoliosList .portfolios .pagination {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 0 25px 0;
+}
+
+aside {
+  float: right;
+  width: 34%;
+}
+
+aside .agendasList .title {
+  background: #34a853;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+aside .agendasList .title h2 {
+  text-align: center;
+  padding: 15px 0;
+}
+
+aside .agendasList .agenda {
+  padding: 10px 0;
+  border-bottom: 1px dotted #34a853;
+}
+
+aside .agendasList .agenda:before, aside .agendasList .agenda:after {
+  content: "";
+  display: table;
+}
+
+aside .agendasList .agenda:after {
+  clear: both;
+}
+
+aside .agendasList .agenda img {
+  float: left;
+  width: 80px;
+}
+
+aside .agendasList .agenda p {
+  padding-left: 100px;
+}
+
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #1F1F1F;
+}
+
+footer .address .container {
+  padding: 0 50px 0 80px;
+}
+
+footer .address .container p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+}

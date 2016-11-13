@@ -1,0 +1,20 @@
+footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: $black;
+
+  .address {
+
+    .container {
+      padding: 0 50px 0 80px;
+
+      p {
+        display: flex;
+        align-items: center;
+        height: 100px;
+      }// p
+    }// container
+  }// address
+}// footer 

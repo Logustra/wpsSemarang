@@ -1,0 +1,39 @@
+.navbar-default {
+  border: 0;
+  margin-bottom: 0;
+
+  .container {
+    padding: 0 70px;
+
+    .navbar-header {
+
+      .navbar-brand {
+        padding: 10px 0 65px 30px;
+
+        img {
+          max-width: 300px;
+        }// img
+      }// navbar-brand
+    }// navbar-header
+
+    .navbar-collapse {
+
+      .navbarButton {
+        font-weight: bold;
+        border: 0;
+        margin: 20px 10px 10px 50px;
+      }// navbarButton
+
+      ul {
+        padding-top: 10px;
+      }// ul
+
+    }// navbar-collapse
+
+    .colorLine:empty {
+      content: "";
+      @include bgimg("../images/color-line.svg");
+      height: 5px;
+    }// colorLine
+  }// container
+}// navbar-default

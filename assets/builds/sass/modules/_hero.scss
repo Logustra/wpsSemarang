@@ -1,0 +1,16 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include bgimg("../images/bg-hero.png", center center, cover);
+  height: 575px;
+
+  .container {
+    padding: 0 80px;
+
+    img {
+      max-width: 400px;
+      margin: 0 auto;
+    }// img
+  }// container
+}// hero

@@ -1,0 +1,16 @@
+{
+  "name": "wpsSemarang",
+  "description": "Programmer Semarang",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Logustra/wpsSemarang.git"
+  },
+  "author": "Faizal Andyka",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "~1.2.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-autoprefixer": "^3.0.4"
+  }
+}
