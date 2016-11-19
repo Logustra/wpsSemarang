@@ -1,12 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400|Raleway:100,300,400|Roboto:100,300,400");
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400|Raleway:100,300,400|Roboto:100,300,400');
 
 body {
   width: 100%;
   background: $smoke;
+  font-family: $font-primary;
 }
 
 h2 {
   margin: 0;
+  font-size: 2rem;
+  font-family: $font-header
 }
 
 img {
@@ -20,4 +23,14 @@ figure {
 
 .title {
   width: 100%;
+}
+
+.hiddenContent {
+  top: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+.fa-square {
+  color: $blue;
 }

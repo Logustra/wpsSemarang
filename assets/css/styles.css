@@ -2,10 +2,13 @@
 body {
   width: 100%;
   background: #f7f7f7;
+  font-family: "Roboto", sans-serif;
 }
 
 h2 {
   margin: 0;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
 }
 
 img {
@@ -21,6 +24,16 @@ figure {
   width: 100%;
 }
 
+.hiddenContent {
+  top: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+.fa-square {
+  color: #0088CC;
+}
+
 .button {
   width: 100%;
   display: -webkit-box;
@@ -33,6 +46,11 @@ figure {
       flex-wrap: wrap;
 }
 
+.btn-danger {
+  border: 0;
+  outline: none;
+}
+
 .navbar-default {
   border: 0;
   margin-bottom: 0;
@@ -43,7 +61,7 @@ figure {
 }
 
 .navbar-default .container .navbar-header .navbar-brand {
-  padding: 10px 0 65px 30px;
+  padding: 10px 10px 65px 60px;
 }
 
 .navbar-default .container .navbar-header .navbar-brand img {
@@ -51,13 +69,16 @@ figure {
 }
 
 .navbar-default .container .navbar-collapse .navbarButton {
+  float: none;
   font-weight: bold;
   border: 0;
-  margin: 20px 10px 10px 50px;
+  margin: 22px 30px 10px 50px;
 }
 
 .navbar-default .container .navbar-collapse ul {
+  float: right;
   padding-top: 10px;
+  font-weight: 300;
 }
 
 .navbar-default .container .colorLine:empty {
@@ -83,20 +104,62 @@ figure {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 575px;
+  min-height: 575px;
 }
 
 .hero .container {
-  padding: 0 80px;
+  padding: 0 70px;
+}
+
+.hero .container p {
+  margin-top: 80px;
+  color: #ffffff;
+}
+
+.hero .container .button {
+  margin-top: 25px;
+}
+
+.hero .container .button a {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-right: 25px;
+  border-radius: 50px;
+}
+
+.hero .container .button a:nth-child(2) {
+  margin-right: 0;
+}
+
+.hero .container .button .togglereadMore {
+  background: #cb2222;
+}
+
+.hero .container .button .togglereadMore:hover {
+  background: #f7f7f7;
+  color: #cb2222;
+  -webkit-transition: background .2s ease-in;
+          transition: background .2s ease-in;
+}
+
+.hero .container .button .toggleAgenda {
+  background: #34a853;
+}
+
+.hero .container .button .toggleAgenda:hover {
+  background: #f7f7f7;
+  color: #34a853;
+  -webkit-transition: background .2s ease-in;
+          transition: background .2s ease-in;
 }
 
 .hero .container img {
-  max-width: 400px;
   margin: 0 auto;
 }
 
 main {
   margin: 0 auto;
+  padding-bottom: 50px;
   background: #ffffff;
   width: 80%;
 }
@@ -138,6 +201,7 @@ main:after {
 
 .programmersList .programmers figure figcaption {
   padding: 10px 0;
+  font-weight: 300;
 }
 
 .programmersList .programmers a {
@@ -145,7 +209,7 @@ main:after {
 }
 
 .programmersList .programmers a img {
-  max-width: 180px;
+  max-width: 150px;
 }
 
 .portfoliosList {
@@ -164,8 +228,109 @@ main:after {
 }
 
 .portfoliosList .portfolios {
-  padding: 10px 0;
+  padding: 10px 0 10px 15px;
   text-align: center;
+}
+
+.portfoliosList .portfolios .portfolio {
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  line-height: 1.2em;
+  margin-bottom: 15px;
+}
+
+.portfoliosList .portfolios .portfolio figcaption {
+  position: absolute;
+  bottom: -1%;
+  width: 100%;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  padding: 10px 20px 15px 20px;
+  background-color: #0088CC;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  color: #ffffff;
+}
+
+.portfoliosList .portfolios .portfolio figcaption h3,
+.portfoliosList .portfolios .portfolio figcaption p {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.portfoliosList .portfolios .portfolio figcaption h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.portfoliosList .portfolios .portfolio figcaption p {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.portfoliosList .portfolios .portfolio figcaption a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.portfoliosList .portfolios .portfolio *,
+.portfoliosList .portfolios .portfolio *:before,
+.portfoliosList .portfolios .portfolio *:after {
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s linear;
+          transition: all 0.25s linear;
+}
+
+.portfoliosList .portfolios .portfolio:hover img {
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+.portfoliosList .portfolios .portfolio:hover figcaption,
+.portfoliosList .portfolios .portfolio:hover h3,
+.portfoliosList .portfolios .portfolio:hover p {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.portfoliosList .portfolios .portfolio:hover figcaption {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  border: 0;
+}
+
+.portfoliosList .portfolios .portfolio:hover figcaption h3 {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.portfoliosList .portfolios .portfolio:hover figcaption p {
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+  opacity: 0.5;
+  line-height: 10px;
+}
+
+.portfoliosList .portfolios .col-sm-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0;
 }
 
 .portfoliosList .portfolios .pagination {
@@ -181,9 +346,18 @@ main:after {
   padding: 30px 0 25px 0;
 }
 
+.address {
+  width: 100%;
+}
+
+.address .map {
+  width: 100%;
+  height: 275px;
+}
+
 aside {
   float: right;
-  width: 34%;
+  width: 33.5%;
 }
 
 aside .agendasList .title {
@@ -193,34 +367,36 @@ aside .agendasList .title {
 }
 
 aside .agendasList .title h2 {
-  text-align: center;
   padding: 15px 0;
+  text-align: center;
 }
 
-aside .agendasList .agenda {
+aside .agendasList .agendas {
+  padding: 0 15px;
+}
+
+aside .agendasList .agendas .agenda {
   padding: 10px 0;
   border-bottom: 1px dotted #34a853;
 }
 
-aside .agendasList .agenda:before, aside .agendasList .agenda:after {
+aside .agendasList .agendas .agenda:before, aside .agendasList .agendas .agenda:after {
   content: "";
   display: table;
 }
 
-aside .agendasList .agenda:after {
+aside .agendasList .agendas .agenda:after {
   clear: both;
 }
 
-aside .agendasList .agenda img {
+aside .agendasList .agendas .agenda img {
   float: left;
   width: 80px;
-}
-
-aside .agendasList .agenda p {
-  padding-left: 100px;
+  margin-right: 10px;
 }
 
 footer {
+  padding: 25px 0 17px 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,18 +407,204 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   background: #1F1F1F;
+  color: #ffffff;
 }
 
-footer .address .container {
-  padding: 0 50px 0 80px;
+footer .container {
+  font-weight: 300;
+  font-size: 1.5rem;
 }
 
-footer .address .container p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100px;
+footer .container p {
+  float: left;
+}
+
+footer .container .pright {
+  float: right;
+}
+
+/* ==========================================================================
+    Responsive Navigation
+   ========================================================================== */
+@media screen and (max-width: 991px) {
+  .navbar-default .container .navbar-header {
+    float: none;
+  }
+}
+
+.navbar-default .container .navbar-header .navbar-brand {
+  padding: 10px 10px 65px 30px;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-default .container .navbar-header .navbar-brand img {
+    margin-top: 10px;
+    display: block;
+    width: 190px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-default .container .navbar-header .navbar-toggle {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-default .container .navbar-collapse {
+    border-top: 1px solid #ffffff;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-default .container .navbar-collapse .navbarButton {
+    margin: 15px 30px 20px 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-default .container .navbar-collapse .navbarButton {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-default .container .navbar-collapse .navbarButton img {
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-default .container .navbar-collapse ul {
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-default .container .navbar-collapse ul li {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-default .container .navbar-collapse ul li a {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-default .container .navbar-collapse ul li a {
+    padding-left: 45px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-default .container .navbar-collapse.collapse {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-default .container .collapse.in {
+    display: block !important;
+  }
+}
+
+/* ==========================================================================
+    Responsive Hero
+   ========================================================================== */
+@media screen and (max-width: 991px) {
+  .hero .container .col-md-6 {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hero .container p {
+    margin-top: 30px;
+  }
+}
+
+/* ==========================================================================
+    Responsive portfoliosList
+   ========================================================================== */
+@media screen and (max-width: 991px) {
+  .portfoliosList {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+     Responsive Aside
+  ========================================================================== */
+@media screen and (max-width: 991px) {
+  aside {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  aside .agendasList .agenda img {
+    visibility: hidden;
+    float: none;
+    position: absolute;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  aside .agendasList .agenda img {
+    visibility: visible;
+    float: left;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  aside .agendasList .agenda p {
+    padding: 0;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  aside .agendasList .agenda p {
+    padding: 0;
+    float: none;
+  }
+}
+
+/* ==========================================================================
+    Responsive address
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+  .address .col-sm-6:nth-last-child(1) {
+    margin-top: 40px;
+  }
+}
+
+/* ==========================================================================
+    Responsive footer
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+  footer .container p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer .container p:nth-child(1) {
+    padding-right: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer .container p:nth-child(1) {
+    padding-right: 100px;
+  }
 }

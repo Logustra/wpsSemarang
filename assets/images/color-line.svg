@@ -9,11 +9,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1280"
-   height="10"
+   width="1000"
+   height="5"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
+   inkscape:export-filename="/home/crow/Documents/color-line.svg.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
    sodipodi:docname="color-line.svg">
   <defs
      id="defs4" />
@@ -24,11 +27,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.5"
-     inkscape:cx="1167.1996"
-     inkscape:cy="115.45847"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="893.42331"
+     inkscape:cy="-270.96551"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g3776"
      showgrid="false"
      inkscape:window-width="1327"
      inkscape:window-height="744"
@@ -51,34 +54,43 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-1042.3622)">
+     transform="translate(0,-1047.3622)">
     <g
-       id="g3776"
-       transform="matrix(1.1601793,0,0,1.4096916,-36.877393,1070.5035)">
-      <path
-         style="fill:#5aaef5;fill-opacity:1"
-         d="m 305.06341,-19.966823 0,7.09375 279.06089,0 5.22036,-7.09375 z"
-         id="path3770"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="ccccc" />
-      <path
-         sodipodi:nodetypes="ccccc"
-         inkscape:connector-curvature="0"
-         id="rect2994"
-         d="m 31.78125,-19.966823 0,7.09375 279.06089,0 5.22036,-7.09375 z"
-         style="fill:#cb2222;fill-opacity:1" />
-      <path
-         sodipodi:nodetypes="ccccc"
-         inkscape:connector-curvature="0"
-         id="path3772"
-         d="m 862.91609,-12.873073 0,-7.09375 -279.06089,0 -5.22036,7.09375 z"
-         style="fill:#f5f659;fill-opacity:1" />
-      <path
-         style="fill:#f38d60;fill-opacity:1"
-         d="m 1135.059,-12.873073 0,-7.09375 -279.06094,0 -5.22036,7.09375 z"
-         id="path3774"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="ccccc" />
+       transform="matrix(0.93749999,0,0,0.50000001,-0.00461656,526.18812)"
+       id="layer1-3"
+       inkscape:label="Layer 1">
+      <g
+         transform="matrix(1.1601793,0,0,1.4096916,-36.86906,1070.4957)"
+         id="g3776">
+        <g
+           id="g2988"
+           transform="matrix(0.83333441,0,0,1,5.2968406,0)">
+          <path
+             style="fill:#5aaef5;fill-opacity:1"
+             d="m 305.06345,-19.966823 0,7.09375 279.06094,0 5.22036,-7.09375 z"
+             id="path3770"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="ccccc" />
+          <path
+             sodipodi:nodetypes="ccccc"
+             inkscape:connector-curvature="0"
+             id="rect2994"
+             d="m 31.78125,-19.966823 0,7.09375 279.06093,0 5.22036,-7.09375 z"
+             style="fill:#cb2222;fill-opacity:1" />
+          <path
+             sodipodi:nodetypes="ccccc"
+             inkscape:connector-curvature="0"
+             id="path3772"
+             d="m 862.91624,-12.873073 0,-7.09375 -279.06096,0 -5.22036,7.09375 z"
+             style="fill:#f5f659;fill-opacity:1" />
+          <path
+             style="fill:#f38d60;fill-opacity:1"
+             d="m 1135.0664,-12.867531 0,-7.09375 -279.06105,0 -5.22033,7.09375 z"
+             id="path3774"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="ccccc" />
+        </g>
+      </g>
     </g>
   </g>
 </svg>

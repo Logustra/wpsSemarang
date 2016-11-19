@@ -1,6 +1,6 @@
 aside {
   float: right;
-  width: 34%;
+  width: 33.5%;
 
   .agendasList {
 
@@ -10,24 +10,25 @@ aside {
       margin-bottom: 20px;
 
       h2 {
-        text-align: center;
         padding: 15px 0;
+        text-align: center;
       }// h2
     }// title
 
-    .agenda {
-      @include clearfix;
-      padding: 10px 0;
-      border-bottom: 1px dotted $green;
+    .agendas {
+      padding: 0 15px;
 
-      img {
-        float: left;
-        width: 80px;
-      }// img
+      .agenda {
+        @include clearfix;
+        padding: 10px 0;
+        border-bottom: 1px dotted $green;
 
-      p {
-        padding-left: 100px;
-      }// p
-    }// agenda
+        img {
+          float: left;
+          width: 80px;
+          margin-right: 10px;
+        }// img
+      }// agenda
+    }//agendas
   }// agendasList
 }// aside

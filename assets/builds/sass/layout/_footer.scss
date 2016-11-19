@@ -1,20 +1,22 @@
 footer {
+  padding: 25px 0 17px 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background: $black;
+  color: $white;
 
-  .address {
+  .container {
+    font-weight: 300;
+    font-size: 1.5rem;
 
-    .container {
-      padding: 0 50px 0 80px;
+    p {
+      float: left;
+    }// p
 
-      p {
-        display: flex;
-        align-items: center;
-        height: 100px;
-      }// p
-    }// container
-  }// address
-}// footer 
+    .pright {
+      float: right;
+    }// pright
+  }// container
+}// footer
