@@ -3,12 +3,12 @@
   margin-bottom: 0;
 
   .container {
-    padding: 0 70px;
+    padding: 0 55px;
 
     .navbar-header {
 
       .navbar-brand {
-        padding: 10px 10px 65px 60px;
+        padding: 10px 10px 65px 55px;
 
         img {
           max-width: 300px;
@@ -19,10 +19,19 @@
     .navbar-collapse {
 
       .navbarButton {
-        float: none;
-        font-weight: bold;
-        border: 0;
         margin: 22px 30px 10px 50px;
+
+      &:hover {
+
+        svg {
+
+          g {
+            fill: $blue;
+            transition-duration: .3s
+          }
+        }
+      }
+
       }// navbarButton
 
       ul {
@@ -33,10 +42,12 @@
 
     }// navbar-collapse
 
-    .colorLine:empty {
-      content: "";
-      @include bgimg("../images/color-line.svg");
-      height: 5px;
-    }// colorLine
+
   }// container
+  .colorLine:empty {
+    width: 100%;
+    content: "";
+    @include bgimg("../images/color-line.svg");
+    height: 5px;
+  }// colorLine
 }// navbar-default

@@ -13,7 +13,9 @@
       }
 
       .navbar-brand {
-        padding: 10px 10px 65px 30px;
+        @media screen and (max-width: $medium) {
+          padding: 10px 10px 65px 30px;
+        }
 
         img {
           @media screen and (max-width: $medium) {
@@ -183,6 +185,26 @@ aside {
   }// columns
 }// address
 
+/* ==========================================================================
+    Responsive about
+   ========================================================================== */
+
+.about {
+
+  .detailsAbout {
+    @media screen and (max-width: $large) {
+      padding: 0 110px;
+    }
+
+    @media screen and (max-width: $small) {
+      padding: 0 80px;
+    }
+
+    @media screen and (max-width: $xsmall) {
+      padding: 0 50px;
+    }
+  }
+}
 
 /* ==========================================================================
     Responsive footer

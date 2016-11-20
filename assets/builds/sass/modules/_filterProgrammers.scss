@@ -1,0 +1,23 @@
+.filterProgrammers {
+  background: $green;
+  padding: 5px 25px;
+  color: $white;
+
+  .row {
+    display: flex;
+    align-items: center;
+
+    .form-group {
+      margin: 15px 0 20px 0;
+    }// form-group
+
+    p {
+      float: right;
+
+      a {
+        text-decoration: none;
+        color: $white;
+      }// a
+    }// p
+  }// row
+}// filterProgrammers

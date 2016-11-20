@@ -57,11 +57,11 @@ figure {
 }
 
 .navbar-default .container {
-  padding: 0 70px;
+  padding: 0 55px;
 }
 
 .navbar-default .container .navbar-header .navbar-brand {
-  padding: 10px 10px 65px 60px;
+  padding: 10px 10px 65px 55px;
 }
 
 .navbar-default .container .navbar-header .navbar-brand img {
@@ -69,10 +69,13 @@ figure {
 }
 
 .navbar-default .container .navbar-collapse .navbarButton {
-  float: none;
-  font-weight: bold;
-  border: 0;
   margin: 22px 30px 10px 50px;
+}
+
+.navbar-default .container .navbar-collapse .navbarButton:hover svg g {
+  fill: #0088CC;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
 }
 
 .navbar-default .container .navbar-collapse ul {
@@ -81,13 +84,27 @@ figure {
   font-weight: 300;
 }
 
-.navbar-default .container .colorLine:empty {
+.navbar-default .colorLine:empty {
+  width: 100%;
   content: "";
   background: url("../images/color-line.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: auto;
   height: 5px;
+}
+
+.paginations {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 0 25px 0;
 }
 
 .hero {
@@ -138,8 +155,8 @@ figure {
 .hero .container .button .togglereadMore:hover {
   background: #f7f7f7;
   color: #cb2222;
-  -webkit-transition: background .2s ease-in;
-          transition: background .2s ease-in;
+  -webkit-transition: all .3s ease-out;
+          transition: all .3s ease-out;
 }
 
 .hero .container .button .toggleAgenda {
@@ -149,8 +166,8 @@ figure {
 .hero .container .button .toggleAgenda:hover {
   background: #f7f7f7;
   color: #34a853;
-  -webkit-transition: background .2s ease-in;
-          transition: background .2s ease-in;
+  -webkit-transition: all .3s ease-out;
+          transition: all .3s ease-out;
 }
 
 .hero .container img {
@@ -179,10 +196,11 @@ main:after {
 
 .programmersList h2 {
   padding-top: 40px;
+  font-size: 3rem;
 }
 
 .programmersList .programmers {
-  padding: 30px 0;
+  padding: 50px 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,6 +228,103 @@ main:after {
 
 .programmersList .programmers a img {
   max-width: 150px;
+}
+
+.programmersList .programmers .button a svg:hover g {
+  fill: #0088CC;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.colorLine:empty {
+  width: 100%;
+  content: "";
+  background: url("../images/color-line.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+  height: 5px;
+}
+
+.moreProgrammersList figure {
+  margin-top: 35px;
+  padding: 0 30px;
+}
+
+.moreProgrammersList figure img {
+  padding-top: 2px;
+}
+
+.moreProgrammersList figure figcaption .status {
+  float: right;
+  margin: 0;
+}
+
+.moreProgrammersList figure figcaption .status .fa {
+  padding-left: 10px;
+}
+
+.moreProgrammersList figure figcaption .status .busy {
+  color: #cb2222;
+}
+
+.moreProgrammersList figure figcaption .status .available {
+  color: #fbbc05;
+}
+
+.moreProgrammersList figure figcaption h3 {
+  margin: 0;
+}
+
+.moreProgrammersList figure figcaption h3, .moreProgrammersList figure figcaption h4 {
+  font-family: "Raleway", sans-serif;
+}
+
+.moreProgrammersList figure figcaption p {
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.moreProgrammersList figure figcaption span img {
+  width: 100px;
+  padding: 0;
+}
+
+.moreProgrammersList figure figcaption .detailProgrammer h4 {
+  line-height: 3px;
+  padding-top: 12px;
+}
+
+.moreProgrammersList figure figcaption .detailProgrammer p {
+  line-height: normal;
+}
+
+.filterProgrammers {
+  background: #34a853;
+  padding: 5px 25px;
+  color: #ffffff;
+}
+
+.filterProgrammers .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filterProgrammers .row .form-group {
+  margin: 15px 0 20px 0;
+}
+
+.filterProgrammers .row p {
+  float: right;
+}
+
+.filterProgrammers .row p a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .portfoliosList {
@@ -333,19 +448,6 @@ main:after {
   padding-left: 0;
 }
 
-.portfoliosList .portfolios .pagination {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 30px 0 25px 0;
-}
-
 .address {
   width: 100%;
 }
@@ -395,6 +497,27 @@ aside .agendasList .agendas .agenda img {
   margin-right: 10px;
 }
 
+.about {
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 4rem;
+  padding: 40px;
+}
+
+.about .detailsAbout {
+  padding: 0 190px;
+}
+
+.about .detailsAbout p {
+  padding-bottom: 15px;
+}
+
+.about .detailsAbout p:nth-last-child(1) {
+  padding-bottom: 100px;
+}
+
 footer {
   padding: 25px 0 17px 0;
   width: 100%;
@@ -432,8 +555,10 @@ footer .container .pright {
   }
 }
 
-.navbar-default .container .navbar-header .navbar-brand {
-  padding: 10px 10px 65px 30px;
+@media screen and (max-width: 991px) {
+  .navbar-default .container .navbar-header .navbar-brand {
+    padding: 10px 10px 65px 30px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -585,6 +710,27 @@ footer .container .pright {
 @media screen and (max-width: 767px) {
   .address .col-sm-6:nth-last-child(1) {
     margin-top: 40px;
+  }
+}
+
+/* ==========================================================================
+    Responsive about
+   ========================================================================== */
+@media screen and (max-width: 1199px) {
+  .about .detailsAbout {
+    padding: 0 110px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about .detailsAbout {
+    padding: 0 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about .detailsAbout {
+    padding: 0 50px;
   }
 }
 

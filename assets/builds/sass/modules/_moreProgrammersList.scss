@@ -1,0 +1,72 @@
+.colorLine:empty {
+  width: 100%;
+  content: "";
+  @include bgimg("../images/color-line.svg");
+  height: 5px;
+}// colorLine
+
+.moreProgrammersList {
+
+  figure {
+    margin-top: 35px;
+    padding: 0 30px;
+
+    img {
+      padding-top: 2px;
+    }// img
+
+    figcaption {
+
+      .status {
+        float: right;
+        margin: 0;
+
+        .fa {
+          padding-left: 10px;
+        }// fa
+
+        .busy {
+          color: $red;
+        }// busy
+
+        .available {
+          color: $yellow;
+        }// available
+      }// status
+
+      h3 {
+        margin: 0;
+      }// h3
+
+      h3,h4 {
+        font-family: $font-header;
+      }// h3 and h4
+
+      p {
+        font-weight: 300;
+        line-height: 18px;
+      }// p
+
+      span {
+
+        img {
+          width: 100px;
+          padding: 0;
+        }// img
+      }// span
+
+      .detailProgrammer {
+
+        h4 {
+          line-height: 3px;
+          padding-top: 12px;
+        }// h4
+
+        p {
+          line-height: normal;
+        }// p
+
+      }// detailProgrammer
+    }// figcaption
+  }// figure
+}// moreProgrammersList

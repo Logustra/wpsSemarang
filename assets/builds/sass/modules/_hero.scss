@@ -34,7 +34,7 @@
         &:hover {
           background: $smoke;
           color: $red;
-          transition: background .2s ease-in;
+          transition: all .3s ease-out;
         }// hover
       }// togglereadMore
 
@@ -44,7 +44,7 @@
         &:hover {
           background: $smoke;
           color: $green;
-          transition: background .2s ease-in;
+          transition: all .3s ease-out;
         }// hover
       }// toggleAgenda
     }//button
