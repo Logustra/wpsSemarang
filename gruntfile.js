@@ -17,7 +17,7 @@ module.exports = function(grunt){
       },//options
       dev: {
         files: {
-          "assets/builds/css/styles.css": ["assets/builds/sass/*.scss", "assets/builds/sass/abstracts/*.scss", "assets/builds/sass/base/*.scss", "assets/builds/sass/components/*.scss", "assets/builds/sass/layout/*.scss", "assets/builds/sass/modules/*.scss"]
+          "assets/builds/css/styles.css": ["assets/builds/sass/*.scss", "assets/builds/sass/abstracts/*.scss", "assets/builds/sass/base/*.scss", "assets/builds/sass/layout/*.scss", "assets/builds/sass/modules/*.scss"]
         }//files
       }//dist
     },//sass
@@ -37,7 +37,7 @@ module.exports = function(grunt){
         tasks : ["uglify"]
       },//scripts
       sass: {
-        files : ["assets/builds/sass/*.scss", "assets/builds/sass/abstracts/*.scss", "assets/builds/sass/base/*.scss", "assets/builds/sass/components/*.scss", "assets/builds/sass/layout/*.scss", "assets/builds/sass/modules/*.scss"],
+        files : ["assets/builds/sass/*.scss", "assets/builds/sass/abstracts/*.scss", "assets/builds/sass/base/*.scss", "assets/builds/sass/layout/*.scss", "assets/builds/sass/modules/*.scss"],
         tasks : ["sass"]
       },//sass
       html : {

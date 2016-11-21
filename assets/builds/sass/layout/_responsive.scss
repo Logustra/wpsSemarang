@@ -119,6 +119,23 @@
 }// hero
 
 /* ==========================================================================
+    Responsive moreProgrammersList
+   ========================================================================== */
+
+   .moreProgrammersList {
+
+     figure {
+
+       img {
+         @media screen and (max-width: $medium) {
+           max-width: 300px;
+           margin-bottom: 35px;
+         }
+       }// img
+     }// figure
+   }// moreProgrammersList
+
+/* ==========================================================================
     Responsive portfoliosList
    ========================================================================== */
 
@@ -178,10 +195,13 @@ aside {
 
 .address {
 
-  .col-sm-6:nth-last-child(1) {
-    @media screen and (max-width: $small) {
-      margin-top: 40px;
-    }
+  .col-sm-6 {
+
+    &:nth-last-child(1) {
+      @media screen and (max-width: $small) {
+        margin-top: 40px;
+      }
+    }// nth-last-child
   }// columns
 }// address
 
@@ -219,16 +239,16 @@ footer {
       @media screen and (max-width: $small) {
         font-size: 1rem;
       }
-    }// p
 
-    p:nth-child(1) {
-      @media screen and (max-width: $small) {
-        padding-right: 150px;
-      }
+      &:nth-child(1) {
+        @media screen and (max-width: $small) {
+          padding-right: 120px;
+        }
 
-      @media screen and (max-width: $xsmall) {
-        padding-right: 100px;
-      }
+        @media screen and (max-width: $xsmall) {
+          padding-right: 50px;
+        }
+      }// nth-child
     }// p
   }// container
 }// footer

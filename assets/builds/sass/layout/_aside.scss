@@ -23,6 +23,10 @@ aside {
         padding: 10px 0;
         border-bottom: 1px dotted $green;
 
+        &:nth-last-child(1) {
+          border-bottom: 0;
+        }
+
         img {
           float: left;
           width: 80px;

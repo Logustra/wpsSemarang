@@ -7,66 +7,71 @@
 
 .moreProgrammersList {
 
-  figure {
-    margin-top: 35px;
-    padding: 0 30px;
+  .row {
+    padding: 0 15px;
 
-    img {
-      padding-top: 2px;
-    }// img
+    figure {
+      @include clearfix;
+      padding: 20px 0;
+      border-top: 1px dotted $green;
 
-    figcaption {
+      img {
+        padding-top: 2px;
+      }// img
 
-      .status {
-        float: right;
-        margin: 0;
+      figcaption {
 
-        .fa {
-          padding-left: 10px;
-        }// fa
+        .status {
+          float: right;
+          margin: 0;
 
-        .busy {
-          color: $red;
-        }// busy
+          .fa {
+            padding-left: 10px;
+          }// fa
 
-        .available {
-          color: $yellow;
-        }// available
-      }// status
+          .busy {
+            color: $red;
+          }// busy
 
-      h3 {
-        margin: 0;
-      }// h3
+          .available {
+            color: $yellow;
+          }// available
+        }// status
 
-      h3,h4 {
-        font-family: $font-header;
-      }// h3 and h4
+        h3 {
+          margin: 0;
+        }// h3
 
-      p {
-        font-weight: 300;
-        line-height: 18px;
-      }// p
-
-      span {
-
-        img {
-          width: 100px;
-          padding: 0;
-        }// img
-      }// span
-
-      .detailProgrammer {
-
-        h4 {
-          line-height: 3px;
-          padding-top: 12px;
-        }// h4
+        h3,h4 {
+          font-family: $font-header;
+        }// h3 and h4
 
         p {
-          line-height: normal;
+          font-weight: 300;
+          line-height: 18px;
         }// p
 
-      }// detailProgrammer
-    }// figcaption
-  }// figure
+        span {
+
+          img {
+            width: 100px;
+            padding: 0;
+          }// img
+        }// span
+
+        .detailProgrammer {
+
+          h4 {
+            line-height: 3px;
+            padding-top: 12px;
+          }// h4
+
+          p {
+            line-height: normal;
+          }// p
+
+        }// detailProgrammer
+      }// figcaption
+    }// figure
+  }//row
 }// moreProgrammersList

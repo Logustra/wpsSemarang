@@ -51,6 +51,19 @@ figure {
   outline: none;
 }
 
+.paginations {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 0 25px 0;
+}
+
 .navbar-default {
   border: 0;
   margin-bottom: 0;
@@ -94,19 +107,6 @@ figure {
   height: 5px;
 }
 
-.paginations {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 30px 0 25px 0;
-}
-
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,7 +117,7 @@ figure {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url("../images/bg-hero.png");
+  background: url("../builds/images/bg-hero.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -246,56 +246,69 @@ main:after {
   height: 5px;
 }
 
-.moreProgrammersList figure {
-  margin-top: 35px;
-  padding: 0 30px;
+.moreProgrammersList .row {
+  padding: 0 15px;
 }
 
-.moreProgrammersList figure img {
+.moreProgrammersList .row figure {
+  padding: 20px 0;
+  border-top: 1px dotted #34a853;
+}
+
+.moreProgrammersList .row figure:before, .moreProgrammersList .row figure:after {
+  content: "";
+  display: table;
+}
+
+.moreProgrammersList .row figure:after {
+  clear: both;
+}
+
+.moreProgrammersList .row figure img {
   padding-top: 2px;
 }
 
-.moreProgrammersList figure figcaption .status {
+.moreProgrammersList .row figure figcaption .status {
   float: right;
   margin: 0;
 }
 
-.moreProgrammersList figure figcaption .status .fa {
+.moreProgrammersList .row figure figcaption .status .fa {
   padding-left: 10px;
 }
 
-.moreProgrammersList figure figcaption .status .busy {
+.moreProgrammersList .row figure figcaption .status .busy {
   color: #cb2222;
 }
 
-.moreProgrammersList figure figcaption .status .available {
+.moreProgrammersList .row figure figcaption .status .available {
   color: #fbbc05;
 }
 
-.moreProgrammersList figure figcaption h3 {
+.moreProgrammersList .row figure figcaption h3 {
   margin: 0;
 }
 
-.moreProgrammersList figure figcaption h3, .moreProgrammersList figure figcaption h4 {
+.moreProgrammersList .row figure figcaption h3, .moreProgrammersList .row figure figcaption h4 {
   font-family: "Raleway", sans-serif;
 }
 
-.moreProgrammersList figure figcaption p {
+.moreProgrammersList .row figure figcaption p {
   font-weight: 300;
   line-height: 18px;
 }
 
-.moreProgrammersList figure figcaption span img {
+.moreProgrammersList .row figure figcaption span img {
   width: 100px;
   padding: 0;
 }
 
-.moreProgrammersList figure figcaption .detailProgrammer h4 {
+.moreProgrammersList .row figure figcaption .detailProgrammer h4 {
   line-height: 3px;
   padding-top: 12px;
 }
 
-.moreProgrammersList figure figcaption .detailProgrammer p {
+.moreProgrammersList .row figure figcaption .detailProgrammer p {
   line-height: normal;
 }
 
@@ -491,6 +504,10 @@ aside .agendasList .agendas .agenda:after {
   clear: both;
 }
 
+aside .agendasList .agendas .agenda:nth-last-child(1) {
+  border-bottom: 0;
+}
+
 aside .agendasList .agendas .agenda img {
   float: left;
   width: 80px;
@@ -655,6 +672,16 @@ footer .container .pright {
 }
 
 /* ==========================================================================
+    Responsive moreProgrammersList
+   ========================================================================== */
+@media screen and (max-width: 991px) {
+  .moreProgrammersList figure img {
+    max-width: 300px;
+    margin-bottom: 35px;
+  }
+}
+
+/* ==========================================================================
     Responsive portfoliosList
    ========================================================================== */
 @media screen and (max-width: 991px) {
@@ -745,12 +772,12 @@ footer .container .pright {
 
 @media screen and (max-width: 767px) {
   footer .container p:nth-child(1) {
-    padding-right: 150px;
+    padding-right: 120px;
   }
 }
 
 @media screen and (max-width: 480px) {
   footer .container p:nth-child(1) {
-    padding-right: 100px;
+    padding-right: 50px;
   }
 }

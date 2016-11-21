@@ -1,9 +1,9 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 @import "base/base";
-@import "components/button";
-@import "components/navigation";
-@import "components/pagination";
+@import "base/button";
+@import "base/pagination";
+@import "layout/navigation";
 @import "modules/hero";
 @import "layout/main";
 @import "modules/programmersList";

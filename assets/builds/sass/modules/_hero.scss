@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @include bgimg("../images/bg-hero.png", center center, cover);
+  @include bgimg("../builds/images/bg-hero.png", center center, cover);
   min-height: 575px;
 
   .container {
