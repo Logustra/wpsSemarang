@@ -4,4 +4,11 @@ main {
   background: $white;
   width: 80%;
   @include clearfix;
+
+  .colorLine:empty {
+    width: 100%;
+    content: "";
+    @include bgimg("../builds/images/color-line.svg");
+    height: 5px;
+  }// colorLine
 }

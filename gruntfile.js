@@ -3,7 +3,11 @@ module.exports = function(grunt){
   grunt.loadNpmTasks("grunt-sass");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-autoprefixer");
+  grunt.loadNpmTasks('grunt-browser-sync');
+
   grunt.initConfig ({
+
+    // minify javaScript
     uglify: {
       my_target: {
         files : {
@@ -11,9 +15,12 @@ module.exports = function(grunt){
         }//files
       }//my_target
     },//uglify
+
+    //compile sass
     sass: {
       options: {
-        outputStyle: "expanded",
+        sourceMap: true,
+        outputStyle: "compressed"
       },//options
       dev: {
         files: {
@@ -21,17 +28,21 @@ module.exports = function(grunt){
         }//files
       }//dist
     },//sass
+
+    //automatic browser prefixing
     autoprefixer: {
       options: {
-        browser: ["lates 2 versions", "ie 11", "edge", "firefox", "safari", "opera", "chrome"]
+        browser: ["last 6 versions"],
+        cascade: true
       },
       my_target: {
         src: "assets/builds/css/styles.css",
         dest: "assets/css/styles.css"
       }
     },
+
+    //watch
     watch : {
-      options: { livereload: true },
       scripts: {
         files : ["assets/builds/js/*.js"],
         tasks : ["uglify"]
@@ -46,8 +57,22 @@ module.exports = function(grunt){
       autoprefixer: {
         files: ["assets/builds/css/styles.css"],
         tasks: ["autoprefixer"]
+      },//autoprefixer
+    },//watch
+
+    //livereload
+    browserSync: {
+      bsFiles: {
+        src : ["*.html", "assets/css/styles.css", "assets/js/scripts.js"]
       },
-    }//watch
+    options: {
+      watchTask: true,
+        server: {
+            baseDir: "./"
+        }//server
+      }//options
+    }//browserSync
   });//initConfig
-  grunt.registerTask("default", "watch");
+
+  grunt.registerTask("default", ["browserSync", "watch"]);
 };

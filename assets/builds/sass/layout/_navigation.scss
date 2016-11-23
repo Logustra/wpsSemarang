@@ -47,7 +47,7 @@
   .colorLine:empty {
     width: 100%;
     content: "";
-    @include bgimg("../images/color-line.svg");
+    @include bgimg("../builds/images/color-line.svg");
     height: 5px;
   }// colorLine
 }// navbar-default

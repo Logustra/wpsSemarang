@@ -54,3 +54,11 @@
     }// img
   }// container
 }// hero
+
+#heroAbout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include bgimg("../builds/images/bg-about.jpg", center center, cover);
+  min-height: 575px;
+}

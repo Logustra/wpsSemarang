@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # WPS Semarang
 This is the repository for WPS Semarang Project
 
@@ -14,7 +13,4 @@ This is the repository for WPS Semarang Project
 3. CD to the folder cd `wpsSemarang`
 4. Run `npm-install` to install the project dependencies
 5. Install grunt.js via the linux terminal or Gitbash on a PC `npm install -g grunt-cli`
-5. Run the Grunt command `grunt`
-=======
-# DIREKTORI PROGRAMMER SEMARANG
->>>>>>> 501b10f5fc176dc5f7c01e20c6a11f37a89a4aba
+6. Run the Grunt command `grunt`
