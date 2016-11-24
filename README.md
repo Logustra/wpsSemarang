@@ -1,5 +1,5 @@
-# WPS Semarang
-This is the repository for WPS Semarang Project
+# WDP Semarang - frontend
+This is the repository for WPS Semarang Project - frontend section
 
 ## Instructions
 
