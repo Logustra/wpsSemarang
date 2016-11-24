@@ -3,7 +3,7 @@
   "description": "Programmer Semarang",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Logustra/wpsSemarang.git"
+    "url": "https://gitlab.com/semarang/directory-programmer-fe.git"
   },
   "author": "Faizal Andyka",
   "devDependencies": {
