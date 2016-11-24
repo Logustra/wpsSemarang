@@ -6,7 +6,13 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-browser-sync');
 
   
-  var scssFiles = "assets/builds/sass/styles.scss";
+  var scssFiles = [
+    "assets/builds/sass/*.scss", 
+    "assets/builds/sass/abstracts/*.scss", 
+    "assets/builds/sass/base/*.scss", 
+    "assets/builds/sass/layout/*.scss", 
+    "assets/builds/sass/modules/*.scss"
+  ];
 
   grunt.initConfig ({
 
