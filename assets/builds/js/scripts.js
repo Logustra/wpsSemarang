@@ -10,7 +10,7 @@ function init() {
   var mapElement = document.getElementById('map');
   var map = new google.maps.Map(mapElement, mapOptions);
   var icon = {
-    url: "assets/images/map-marker.svg", // url
+    url: "assets/builds/images/map-marker.svg", // url
     scaledSize: new google.maps.Size(50, 50), // scaled size
     origin: new google.maps.Point(0,0), // origin
     anchor: new google.maps.Point(0, 0) // anchor
