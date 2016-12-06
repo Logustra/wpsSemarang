@@ -5,12 +5,12 @@ module.exports = function(grunt){
   grunt.loadNpmTasks("grunt-autoprefixer");
   grunt.loadNpmTasks('grunt-browser-sync');
 
-  
+
   var scssFiles = [
-    "assets/builds/sass/*.scss", 
-    "assets/builds/sass/abstracts/*.scss", 
-    "assets/builds/sass/base/*.scss", 
-    "assets/builds/sass/layout/*.scss", 
+    "assets/builds/sass/*.scss",
+    "assets/builds/sass/abstracts/*.scss",
+    "assets/builds/sass/base/*.scss",
+    "assets/builds/sass/layout/*.scss",
     "assets/builds/sass/modules/*.scss"
   ];
 
@@ -42,7 +42,6 @@ module.exports = function(grunt){
     autoprefixer: {
       options: {
         browser: ["last 6 versions"],
-        cascade: true
       },
       my_target: {
         src: "assets/builds/css/styles.css",

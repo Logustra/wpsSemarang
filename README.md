@@ -1,4 +1,4 @@
-# WDP Semarang - frontend
+# WDP Semarang
 This is the repository for WPS Semarang Project
 
 ## Instructions

@@ -6,6 +6,7 @@
     "url": "https://gitlab.com/semarang/directory-programmer-fe.git"
   },
   "author": "Faizal Andyka",
+  "license": "ISC",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0",
